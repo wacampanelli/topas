@@ -1,0 +1,73 @@
+################################
+#### Particle Source - 90Sr ####
+################################
+
+#import world
+includeFile = ./World.txt
+
+#isotope definition
+
+sv:Ma/MyStrontium/Components = 1 "Strontium"
+uv:Ma/MyStrontium/Fractions = 1 1.0
+
+s:El/Strontium/Symbol = "Strontium"
+sv:El/Strontium/IsotopeNames = 1 "Sr90"
+uv:El/Strontium/IsotopeAbundances = 1 100.
+
+i:Is/Sr90/Z = 38
+i:Is/Sr90/N = 52
+d:Is/Sr90/A = 89.91 g/mole
+
+
+#geometry->point source = very small sphere
+
+s:Ge/Point/Parent = "World" #placing the source in the world
+s:Ge/Point/Type = "TsSphere"
+s:Ge/Point/Material = "MyStrontium"
+d:Ge/Point/RMax = 5. um 
+d:Ge/Point/TransX=0.0 cm # defaults to 0
+d:Ge/Point/TransY=0.0 cm # defaults to 0
+d:Ge/Point/TransZ=0.0 cm # defaults to 0
+d:Ge/Point/RotX=0.0 deg # defaults to 0
+d:Ge/Point/RotY=0.0 deg # defaults to 0
+d:Ge/Point/RotZ=0.0 deg # defaults to 0
+s:Ge/Point/Color = "Red"
+s:Ge/Point/DrawingStyle = "Solid"
+
+#beam
+
+s:So/Source/Type = "Isotropic"
+s:So/Source/Component = "Point"
+s:So/Source/BeamParticle = "beta" 
+s:So/Source/BeamEnergySpectrumType = "Discrete"
+dv:So/Source/BeamEnergySpectrumValues =  546.14 keV
+uv:So/Source/BeamEnergySpectrumWeights = 1.0
+i:So/Source/MaxNumberOfPointsToSample = 100000000
+ic:So/Source/NumberOfHistoriesInRun = 10
+
+
+#######################################################################################
+#CHANGE VALUES:#
+
+u:So/Source/BeamEnergySpread = 0.757504
+s:So/Source/BeamPositionDistribution = "None" # None, Flat or Gaussian
+s:So/Source/BeamPositionCutoffShape = "Ellipse" # Rectangle or Ellipse (if Flat or Gaussian)
+d:So/Source/BeamPositionCutoffX = 10. cm # X extent of position (if Flat or Gaussian)
+d:So/Source/BeamPositionCutoffY = 10. cm # Y extent of position (if Flat or Gaussian)
+d:So/Source/BeamPositionSpreadX = 0.65 cm # distribution (if Gaussian)
+d:So/Source/BeamPositionSpreadY = 0.65 cm # distribution (if Gaussian)
+s:So/Source/BeamAngularDistribution = "Gaussian" # None, Flat or Gaussian
+d:So/Source/BeamAngularCutoffX = 90. deg # X cutoff of angular distrib (if Flat or Gaussian)
+d:So/Source/BeamAngularCutoffY = 90. deg # Y cutoff of angular distrib (if Flat or Gaussian)
+d:So/Source/BeamAngularSpreadX = 0.0032 rad # X angular distribution (if Gaussian)
+d:So/Source/BeamAngularSpreadY = 0.0032 rad # Y angular distribution (if Gaussian)
+
+#######################################################################################
+
+b:Ts/PauseBeforeQuit = "True"
+
+
+
+
+
+

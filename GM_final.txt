@@ -1,0 +1,16 @@
+####################################
+#### GM Detector complete setup ####
+####################################
+
+includeFile = .txt
+
+#source
+includeFile = Source60Co.txt 
+includeFile = Source90Sr.txt
+
+#detector
+includeFile = Detector.txt
+
+includeFile = View.txt 
+includeFile = Material.txt
+includeFile = Scorers.txt

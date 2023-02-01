@@ -1,6 +1,6 @@
 ##viewer of the setup
 
-includeFile = Detector.txt
+includeFile = DetectorExterior.txt
 includeFile = Source60Co.txt
 includeFile = World.txt
 

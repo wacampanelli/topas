@@ -29,20 +29,3 @@ d:Gr/ViewA/AxesSize         = 0.1 m
 u:Gr/ViewA/Zoom             = 3.
 Ts/UseQt = "True"  #Allows moving and zooming
 b:Ts/PauseBeforeQuit = "True"
-
-
-
-
-s:Sc/TargetScorer/Component 	= "SiDetector"
-s:Sc/TargetScorer/OutputFile 	= "Si_energy_deposit"
-s:Sc/TargetScorer/Quantity 	= "EnergyDeposit" 
-s:Sc/TargetScorer/OutputType 	= "root" 
-i:Sc/TargetScorer/HistogramBins = 1000 	
-d:Sc/TargetScorer/HistogramMin = 0. MeV
-d:Sc/TargetScorer/HistogramMax = 20. MeV
-#sv:Sc/TargetScorer/Report = 1 "CumulativeVolumeHistogram"
-s:Sc/TargetScorer/IfOutputFileAlreadyExists = "Overwrite"
-s:Sc/TargetScorer/IncludeParticleID = "True"
-#i:Sc/TargetScorer/ZBins = 10000 # defaults to 1, that is, un-binned
-#d:Sc/TargetScorer/ZBinMin = -2. cm # defaults to zero
-#d:Sc/TargetScorer/ZBinMax = -1.5 cm # must be specified if EBins is greater than 1

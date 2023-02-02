@@ -4,14 +4,11 @@
 
 #import world
 includeFile = ./World.txt
-includeFile = ./customcylinder.cc
-
 
 
 #geometry of the detector
 
 s:Ge/Cylinder/Parent = "World" #placing the detector in the world
-s:Ge/Cylinder/Type = "CustomCylinder"
 s:Ge/Cylinder/Type = "TsCylinder" #the detector is a hollow cylinder
 d:Ge/Cylinder/RMin = 1.3 cm
 d:Ge/Cylinder/RMax = 2.0 cm

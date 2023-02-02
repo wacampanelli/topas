@@ -12,26 +12,25 @@ d:Ma/ArgonGas/Density = 1.66 mg/cm3
 
 
 #geometry of the detector
-s:Ge/Cylinder/Parent = "DetectorExterior" #placing the gas inside the detector
+s:Ge/GasCylinder/Parent = "DetectorExterior" #placing the gas inside the detector
 s:Ge/Cylinder/Type = "TsCylinder" #the detector is a cylinder, therefore the volume of the gas is also a cylinder
-d:Ge/Cylinder/RMin = 0.0 cm
-d:Ge/Cylinder/RMax = 2.0 cm
-d:Ge/Cylinder/SPhi = 0.0 deg
-d:Ge/Cylinder/DPhi = 360.0 deg
-d:Ge/Cylinder/HL = 7. cm
-s:Ge/Cylinder/Material = "ArgonGas"
-d:Ge/Cylinder/TransX = 0. cm
-d:Ge/Cylinder/TransY = 0. cm
-d:Ge/Cylinder/TransZ = 0. cm
-d:Ge/Cylinder/RotX = 0.0 deg
-d:Ge/Cylinder/RotY = 0.0 deg
-d:Ge/Cylinder/RotZ = 0.0 deg
-s:Ge/Cylinder/Color = "yellow"
-s:Ge/Cylinder/DrawingStyle = "Wireframe"
+d:Ge/GasCylinder/RMin = 0.0 cm
+d:Ge/GasCylinder/RMax = 2.0 cm
+d:Ge/GasCylinder/SPhi = 0.0 deg
+d:Ge/GasCylinder/DPhi = 360.0 deg
+d:Ge/GasCylinder/HL = 7. cm
+s:Ge/GasCylinder/Material = "ArgonGas"
+d:Ge/GasCylinder/TransX = 0. cm
+d:Ge/GasCylinder/TransY = 0. cm
+d:Ge/GasCylinder/TransZ = 0. cm
+d:Ge/GasCylinder/RotX = 0.0 deg
+d:Ge/GasCylinder/RotY = 0.0 deg
+d:Ge/GasCylinder/RotZ = 0.0 deg
+s:Ge/GasCylinder/Color = "yellow"
+s:Ge/GasCylinder/DrawingStyle = "Wireframe"
 
 
-b:Ge/Cylinder/PrintInformation = "True" #Print out specifications
-b:Ts/PauseBeforeQuit = "True"
+b:Ge/GasCylinder/PrintInformation = "True" #Print out specifications
 
 
 

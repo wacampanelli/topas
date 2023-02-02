@@ -19,7 +19,7 @@ i:Is/Sr90/N = 52
 d:Is/Sr90/A = 89.91 g/mole
 
 
-#geometry->point source = very small sphere
+#geometry->point source = very small sphere; position->center
 
 s:Ge/Point/Parent = "World" #placing the source in the world
 s:Ge/Point/Type = "TsSphere"
@@ -40,8 +40,8 @@ s:So/Source/Type = "Isotropic"
 s:So/Source/Component = "Point"
 s:So/Source/BeamParticle = "beta" 
 s:So/Source/BeamEnergySpectrumType = "Discrete"
-dv:So/Source/BeamEnergySpectrumValues =  546.14 keV
-uv:So/Source/BeamEnergySpectrumWeights = 1.0
+dv:So/Source/BeamEnergySpectrumValues =  1 546.14 keV
+uv:So/Source/BeamEnergySpectrumWeights = 1 1.0
 i:So/Source/MaxNumberOfPointsToSample = 100000000
 ic:So/Source/NumberOfHistoriesInRun = 10
 
@@ -64,7 +64,6 @@ d:So/Source/BeamAngularSpreadY = 0.0032 rad # Y angular distribution (if Gaussia
 
 #######################################################################################
 
-b:Ts/PauseBeforeQuit = "True"
 
 
 

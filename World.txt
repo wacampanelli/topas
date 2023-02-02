@@ -5,10 +5,12 @@
 s:Ge/World/Material = "Air" #we'll use the TOPAS air definition
 b:Ge/World/Invisible = "TRUE" #The world will be invisible in the viweing mode
 s:Ge/World/Type = "TsBox"
+
 #dimensions
 d:Ge/World/HLX = 5 m
 d:Ge/World/HLY = 5 m
 d:Ge/World/HLZ = 5 m
+
 #positions (center)
 d:Ge/World/TransX=0. m
 d:Ge/World/TransY=0. m

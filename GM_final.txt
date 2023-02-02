@@ -2,15 +2,14 @@
 #### GM Detector complete setup ####
 ####################################
 
-includeFile = .txt
-
-#source
-includeFile = Source60Co.txt 
-includeFile = Source90Sr.txt
-
-#detector
-includeFile = Detector.txt
-
 includeFile = View.txt 
-includeFile = Material.txt
+includeFile = GM_final.txt
 includeFile = Scorers.txt
+
+#Physics#
+
+d:Ph/Default/CutForAllParticles = 1.0 um
+
+sv:Ph/Default/Modules = 4 "g4em-standard_opt4" "g4optical" "g4ion" "g4stopping"
+ 
+b:Ph/Default/PIXIE = "True"

@@ -1,0 +1,26 @@
+######################
+##### Sheet Lead #####
+######################
+
+#import world
+includeFile = ./World.txt
+
+s:Ge/Sheet/Parent = "World" #placing the sheet in the world
+
+#geometry->sheet; 
+#position->between the source and the detector
+
+s:Ge/Sheet/Type = "TsBox"
+s:Ge/Sheet/Material = "Lead"
+d:Ge/Sheet/HLX = 5. cm 
+d:Ge/Sheet/HLY = 5. cm
+d:Ge/Sheet/HLZ = 2. mm
+d:Ge/Sheet/TransX = 0. m
+d:Ge/Sheet/TransY = 0. m
+d:Ge/Sheet/TransZ = 5. um
+d:Ge/Sheet/RotX = 0. deg
+d:Ge/Sheet/RotY = 0. deg
+d:Ge/Sheet/RotZ = 0. deg
+
+s:Ge/Sheet/Color = "White"
+s:Ge/Sheet/DrawingStyle = "Solid"

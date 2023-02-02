@@ -19,8 +19,7 @@ i:Is/Co60/N = 33
 d:Is/Co60/A = 59.93 g/mole
 
 
-
-#geometry->point source = very small sphere
+#geometry->point source = very small sphere; position->center
 
 s:Ge/Point/Parent = "World" #placing the source in the world
 s:Ge/Point/Type = "TsSphere"
@@ -66,7 +65,6 @@ d:So/Source/BeamAngularSpreadY = 0.0032 rad # Y angular distribution (if Gaussia
 
 #######################################################################################
 
-b:Ts/PauseBeforeQuit = "True"
 
 
 
